@@ -1,442 +1,920 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<head>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <!--- basic page needs
+   ================================================== -->
+   <meta charset="utf-8">
+	<title>AnAltman</title>
+	<meta name="description" content="">  
+	<meta name="AnnaAltman" content="">
 
-    <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="./css/all.css">
+   <!-- mobile specific metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+ 	<!-- CSS
+   ================================================== -->
+   <link rel="stylesheet" href="css/base.css">  
+   <link rel="stylesheet" href="css/main.css">
+   <link rel="stylesheet" href="css/vendor.css">     
+
+   <!-- script
+   ================================================== -->   
+	<script src="js/modernizr.js"></script>
+	<script src="js/pace.min.js"></script>
+
+   <!-- favicons
+	================================================== -->
+	<link rel="icon" type="image/png" href="favicon.png">
+
+</head>
+
+<body id="top">
+
+	<!-- header 
+   ================================================== -->
+   <header>   	
+   	<div class="row">
+
+   		<div class="top-bar">
+   			<a class="menu-toggle" href="#"><span>Menu</span></a>
+
+	   		<div class="logo">
+		         <a href="index.html"></a>
+		      </div>
+
+		   	<nav id="main-nav-wrap">
+					<ul class="main-navigation">
+						<li class="current"><a class="smoothscroll"  href="#intro" title="">Home</a></li>
+						<li><a class="smoothscroll"  href="#about" title="">About</a></li>
+						<li><a class="smoothscroll"  href="#resume" title="">Resume</a></li>
+						<li><a class="smoothscroll"  href="#portfolio" title="">Portfolio</a></li>
+						<li><a class="smoothscroll"  href="#services" title="">Services</a></li>					
+						<li><a class="smoothscroll"  href="#contact" title="">Contact</a></li>
+					</ul>
+				</nav>    		
+   		</div> <!-- /top-bar --> 
+   		
+   	</div> <!-- /row --> 		
+   </header> <!-- /header -->
+
+	<!-- intro section
+   ================================================== -->
+   <section id="intro">
+
+   	<div class="intro-overlay"></div>	
+
+   	<div class="intro-content">
+   		<div class="row">
+   			<div class="col-twelve">
+
+	   			<h5>Hello, World.</h5>
+	   			<h1>I'm Anna Altman.</h1>
+
+	   			<p class="intro-position">
+	   				<span>It´s lovelely that you found me in this part of the big wide web :)</span>
+	   				<span>Would you spare a minute to explore this side?</span>
+	   			</p>
+
+	   			<a class="button stroke smoothscroll" href="#about" title="">More About Me</a>
+
+	   		</div>  
+   			
+   		</div>   		 		
+   	</div> <!-- /intro-content --> 
+
+   	<ul class="intro-social">
+         <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+		<li><a href="#"><i class="fa fa-github"></i></a></li>
+		<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+      </ul> <!-- /intro-social -->      	
+
+   </section> <!-- /intro -->
 
 
-    <!-- --------- Owl-Carousel ------------------->
-    <link rel="stylesheet" href="./css/owl.carousel.min.css">
-    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+   <!-- about section
+   ================================================== -->
+   <section id="about">  
+   <section id="about">
 
-    <!-- ------------ AOS Library ------------------------- -->
-    <link rel="stylesheet" href="./css/aos.css">
+   	<div class="row section-intro">
+   		<div class="col-twelve">
 
-    <!-- Custom Style   -->
-    <link rel="stylesheet" href="./css/Style.css">
+   			<h5>About</h5>
+   			<h1>Let me introduce myself.</h1>
+
+   			<div class="intro-info">
+
+   				<img src="images/Anna.jpg" alt="Profile Picture">
+				<p class="lead">Greetings, I am Anna Altman. I used to be a student of the technical university in nuernberg. There I earned skills in higher mathematics, physics and computer science. In the process, I discovered my passion for programming and dealing with versatile systems..</p>
+   			</div>   			
+
+   		</div>   		
+   	</div> <!-- /section-intro -->
+
+   	<div class="row about-content">
+
+   		<div class="col-six tab-full">
+
+   			<h3>Profile</h3>
+   			<p>Bliblablubb... Meep</p>
+
+   			<ul class="info-list">
+   				<li>
+   					<strong>Fullname:</strong>
+   					<span>Anna Altman</span>
+   				</li>
+   				<li>
+   					<strong>Job:</strong>
+   					<span>Freelancer</span>
+   				</li>
+   				<li>
+   					<strong>Website:</strong>
+   					<span>#</span>
+   				</li>
 
 
+   			</ul> <!-- /info-list -->
 
-    <!-- ----------------------------  Navigation ---------------------------------------------- -->
+   		</div>
 
-    <nav class="nav">
-        <div class="nav-menu flex-row">
-            <div class="nav-brand">
-                <a href="index.html" class="text-gray">A Blog for the weird ones</a>
-            </div>
-            <div class="toggle-collapse">
-                <div class="toggle-icons">
-                    <i class="fas fa-bars"></i>
-                </div>
-            </div>
-            <div>
-                <ul class="nav-items">
-                    <li class="nav-link">
-                        <a href="Index.html">Home</a>
-                    </li>
+   		<div class="col-six tab-full">
 
-                    <!--
-                    <li class="nav-link">
-                        <a href="Category.html">Category Us</a>
-                    </li>
+   			<h3>Skills</h3>
+   			<p>Working in web development in the front- and backend area, as well as through personal interests, I was able to improve and expand my knowledge in the areas of web development in the last years. bliblabluoiuhwro</p>
 
-                    <li class="nav-link">
-                        <a href="#">Contact Us</a>
-                    </li>
-                </ul>
-                --->
-            </div>
-            <!---
-            <div class="social text-gray">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-youtube"></i></a>
-            </div>
-            ---->
-        </div>
-    </nav>
 
-    <!-- ------------x---------------  Navigation --------------------------x------------------- -->
+			<ul class="">
 
-    <!----------------------------- Main Site Section ------------------------------>
+				<ul class="skill-bars">
+					<h3>Webdevelopement-Skills:</h3>
+					<br>
+				   <li>
+				   	<div class="progress percent80"><span>80%</span></div>
+					   <strong>HTML5 </strong>
+				   </li>
 
-    <main>
+				   <li>
+				   	<div class="progress percent85"><span>85%</span></div>
+				   	<strong>CSS3</strong>
+				   </li>
+				   <li>
+				   	<div class="progress percent70"><span>70%</span></div>
+				   	<strong>JQuery</strong>
+				   </li>
+				   <li>
+				   	<div class="progress percent95"><span>95%</span></div>
+				   	<strong>PHP</strong>
+				   </li>
+					<li>
+						<div class="progress percent90"><span>80%</span></div>
+						<strong>Wordpress/ TYPO3/ WIX</strong>
+					</li>
+				</ul>
+				<ul class="skill-bars">
+					<h3>Other Skills:</h3>
+					<br>
+					<br>
+					<li>
+						<div class="progress percent60"><span>60%</span></div>
+						<strong>SQL</strong>
+					</li>
+					<li>
+						<div class="progress percent50"><span>50%</span></div>
+						<strong>JAVA</strong>
+					</li>
+					<li>
+						<div class="progress percent75"><span>75%</span></div>
+						<strong>C#</strong>
+					</li>
+					<li>
+						<div class="progress percent50"><span>50%</span></div>
+						<strong>KOTLIN</strong>
+					</li>
+				</ul> <!-- /skill-bars -->
 
-        <!------------------------ Site Title ---------------------->
 
-        <section class="site-title">
-            <div class="site-background" data-aos="fade-up" data-aos-delay="100">
-                <h3>Do you dare to be critical?</h3>
-                <h1>Staying anonymous is no crime</h1>
-                <button class="btn">Come down the rabbit hole</button>
-            </div>
-        </section>
+   		</div>
 
-        <!------------x----------- Site Title ----------x----------->
+   	</div>
 
-        <!-- --------------------- Blog Carousel ----------------- -->
+   	<div class="row button-section">
+   		<div class="col-twelve">
+   			<a href="#contact" title="Hire Me" class="button stroke smoothscroll">Hire Me</a>
+   		</div>   		
+   	</div>
 
-        <section>
-            <div class="blog">
-                <div class="container">
-                    <div class="owl-carousel owl-theme blog-post">
-                        <div class="blog-content" data-aos="fade-right" data-aos-delay="200">
-                            <img src="./assets/Blog-post/Anonym1.jpg" alt="post-1">
-                            <div class="blog-title">
-                                <h3>"Erotik ist das was man nicht sieht. Pornographie ist die unbarmherzige zu Schaustellung allens." - Erwin Pelzig</h3>
-                                <button class="btn btn-blog">Fashi0n</button>
-                                <span>2 minutes</span>
-                            </div>
-                        </div>
-                        <div class="blog-content" data-aos="fade-in" data-aos-delay="200">
-                            <img src="./assets/Blog-post/gloomy.jpg" alt="post-1">
-                            <div class="blog-title">
-                                <h3>Don´t be gloomy, stay in your roomy!</h3>
-                                <button class="btn btn-blog">L0ve</button>
-                                <span>2 minutes</span>
-                            </div>
-                        </div>
-                        <div class="blog-content" data-aos="fade-left" data-aos-delay="200">
-                            <img src="./assets/Blog-post/Keller.jpg" alt="post-1">
-                            <div class="blog-title">
-                                <h3>Einmal Kellerkind, immer Kellerkind</h3>
-                                <button class="btn btn-blog">L0ve</button>
-                                <span>2 minutes</span>
-                            </div>
-                        </div>
-                        <!---//L0ve = Fashion vorher --->
-                        <div class="blog-content" data-aos="fade-right" data-aos-delay="200">
-                            <img src="./assets/Blog-post/security.jpg" alt="post-1">
-                            <div class="blog-title">
-                                <h3>Security is sexy <3</h3>
-                                <button class="btn btn-blog">L0ve</button>
-                                <span>2 minutes</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="owl-navigation">
-                        <span class="owl-nav-prev"><i class="fas fa-long-arrow-alt-left"></i></span>
-                        <span class="owl-nav-next"><i class="fas fa-long-arrow-alt-right"></i></span>
-                    </div>
-                </div>
-            </div>
-        </section>
+   </section> <!-- /process-->    
 
-        <!-- ----------x---------- Blog Carousel --------x-------- -->
 
-        <!-- ---------------------- Site Content -------------------------->
+   <!-- resume Section
+   ================================================== -->
+	<section id="resume" class="grey-section">
 
-        <section class="container">
-            <div class="site-content">
-                <div class="posts">
-                    <div class="post-content" data-aos="zoom-in" data-aos-delay="200">
-                        <div class="post-image">
-                            <div>
-                                <img src="./assets/man-wearing-face-mask-3942124.jpg" class="img" alt="blog1">
-                            </div>
-                            <div class="post-info flex-row">
-                                <span><i class="fas fa-user text-gray"></i>&nbsp;&nbsp;Anna Altman</span>
-                                <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;Dezember 22, 2021</span>
-                               <!-- <span> Commets</span> --->
-                            </div>
-                        </div>
-                        <div class="post-title">
-                            <a href="#">Does it ever find an end? </a>
-                            <p>
-                                Blibalblusekrjwoerijh
-                                Blibalblusekrjwoerijh
-                                <br>
-                                <br>
-                                I want snuggles
-                                <br>
-                                <br>
-                              lkd
+		<div class="row section-intro">
+   		<div class="col-twelve">
 
-                            </p>
+   			<h5>Resume</h5>
+   			<h1>More of my credentials.</h1>
+
+   			<p class="lead">My work experience varies in the field of cultural work, science work in the field of IT and generally in the social field. The skills acquired in the process are essential and helpful for my personal development and my way of working and work ethic. </p>
+
+   		</div>   		
+   	</div> <!-- /section-intro--> 
+
+   	<div class="row resume-timeline">
+
+   		<div class="col-twelve resume-header">
+
+   			<h2>Work Experience</h2>
+
+   		</div> <!-- /resume-header -->
+
+   		<div class="col-twelve">
+
+   			<div class="timeline-wrap">
+
+   				<div class="timeline-block">
+
+	   				<div class="timeline-ico">
+						<i class="fa fa-briefcase"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<h3>Temporary employee</h3>
+	   					<p>September 2021 - Dezember 2021</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4>Project Office in the Department of Culture of the City of Nuremberg - Nuremberg</h4>
+	   					<p>Events: <li>"Muse im Museum"</li><li>"Rauhnachtsfestival"</li> </p>
+	   				</div>
+
+	   			</div> <!-- /timeline-block -->
+
+	   			<div class="timeline-block">
+
+	   				<div class="timeline-ico">
+						<i class="fa fa-briefcase"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<h3>Corona-tester</h3>
+	   					<p>June 2020 - April 2021</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4>Ecolog Deutschland GmbH </h4>
+	   					<p>Carrying out coronatests at nuremberg airport and train station.</p>
+	   				</div>
+
+	   			</div> <!-- /timeline-block -->
+
+	   			<div class="timeline-block">
+
+	   				<div class="timeline-ico">
+	   					<i class="fa fa-briefcase"></i>
+	   				</div>
+
+	   				<div class="timeline-header">
+	   					<h3>Student assistant programming purposes for Webdevelopement and data visualization</h3>
+	   					<p>February 2017 - October 2020</p>
+	   				</div>
+
+	   				<div class="timeline-content">
+	   					<h4>Nuremberg University of Applied Sciences, Georg Simon Ohm, university job exchange and university support programs</h4>
+	   					<p></p>
+	   				</div>
+
+	   			</div> <!-- /timeline-block -->
+
+   			</div> <!-- /timeline-wrap -->   			
+
+   		</div> <!-- /col-twelve -->
+   		
+   	</div> <!-- /resume-timeline -->
+   	
+   	<div class="row resume-timeline">
+
+   		<div class="col-twelve resume-header">
+
+   			<h2>Education</h2>
+
+   		</div> <!-- /resume-header -->
+
+   		<div class="col-twelve">
+
+			<div class="timeline-wrap">
+
+				<div class="timeline-block">
+
+					<div class="timeline-header">
+						<h3>4 Semester Journalism of Technology (B.A.)</h3>
+							<p>March 2019- March 2021</p>
+					</div> <!-- /timeline-block -->
+					<div class="timeline-block">
+						<div class="timeline-ico">
+							<i class="fa fa-university"></i>
+						</div>
+						<div class="timeline-content">
+							<h4>Technische Hochschule/ Technical University Nuernberg, Georg Simon Ohm</h4>
+						</div>
+					</div>
+				</div> <!-- /resume-timeline -->
+			</div>
+
+			<div class="timeline-wrap">
+
+				<div class="timeline-block">
+
+					<div class="timeline-header">
+						<h3>5 Semester Applied Mathematics and Physics (B.A.)</h3>
+						<p>October 2016- March 2019</p>
+					</div> <!-- /timeline-block -->
+					<div class="timeline-block">
+						<div class="timeline-ico">
+							<i class="fa fa-university"></i>
+						</div>
+						<div class="timeline-content">
+							<h4>Technische Hochschule/ Technical University Nuernberg, Georg Simon Ohm</h4>
+						</div>
+					</div>
+   	</div> <!-- /resume-timeline -->
+			</div>
+
+			<div class="timeline-wrap">
+
+				<div class="timeline-block">
+
+					<div class="timeline-ico">
+						<i class="fa fa-university"></i>
+					</div>
+
+					<div class="timeline-header">
+						<h3>Abitur / A-Level/ Baccalaureate </h3>
+						<p>August 2013</p>
+					</div>
+
+					<div class="timeline-content">
+						<h4>Mesale Fachoberschule/ Secondary school Nürnberg </h4>
+						 <li>Specialty social</li> </p>
+					</div>
+				</div>
+		</div>
+
+	</section> <!-- /features -->
+
+
+	<!-- Portfolio Section
+   ================================================== -->
+	<section id="portfolio">
+
+		<div class="row section-intro">
+   		<div class="col-twelve">
+
+   			<h5>My Interests</h5>
+   			<h1>Here are some of my Interests:</h1>
+
+   			<p class="lead"> </p> /*Porfolio maybe one day?*/
+
+   		</div>   		
+   	</div> <!-- /section-intro--> 
+
+   	<div class="row portfolio-content">
+
+   		<div class="col-twelve">
+
+   			<!-- portfolio-wrapper -->
+	         <div id="folio-wrapper" class="block-1-2 block-mob-full stack">
+
+	         	<div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="images/coding.jpg" alt="Liberty">
+	                  <a href="#modal-01" class="overlay">	                  	           
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+		     					       <h3 class="folio-title">Programming</h3>
+		     					    	 <span class="folio-types">
+		     					       	  Solving new challanges
+		     					       </span>
+		     					   </div>	                      	
+	                     </div>                    
+	                  </a>
+	               </div>	               
+	        		</div> <!-- /folio-item -->
+
+	        		<div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="images/bouldern.jpg" alt="Shutterbug">
+	               	<a href="#modal-02" class="overlay">              		                  
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+	                     		<h3 class="folio-title">Climbing</h3>
+		     					    	<span class="folio-types">
+		     					       	 Is one my biggest passions :)
+		     					      </span>		     		
+		     					   </div> 	                      	
+	                     </div>                    
+	                  </a>
+	               </div>
+	        		</div> <!-- /folio-item -->
+
+	            <div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="images/guitar.jpg"alt="Clouds">
+	                  <a href="#modal-03" class="overlay">             		                  
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+	                     		<h3 class="folio-title">Guitar</h3>
+		     					    	<span class="folio-types">
+		     					       	  Music is life
+		     					      </span>		     		
+		     					   </div> 	                      	
+	                     </div>                    
+	                  </a>
+	               </div>
+	        		</div> <!-- /folio-item -->
+
+	            <div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="images/politics.jpg" alt="Beetle">
+	                  <a href="#modal-04" class="overlay">                  	                 
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+	                     		<h3 class="folio-title">Politics</h3>
+		     					    	<span class="folio-types">
+		     					       	  Everything is political.
+		     					      </span>		     		
+		     					   </div>  	                      	
+	                     </div>                    
+	                  </a>
+	               </div>
+	        		</div> <!-- /folio-item -->     
+
+	        		<div class="bgrid folio-item">
+	               <div class="item-wrap">
+	               	<img src="images/puzzle.jpg" alt="Lighthouse">
+	                  <a href="#modal-05" class="overlay">             		                  
+	                     <div class="folio-item-table">
+	                     	<div class="folio-item-cell">
+	                     		<h3 class="folio-title">Solving of new chalanges</h3>
+		     					    	<span class="folio-types">
+		     					       	  For every solution there is a problem
+
+		     					      </span>		     		
+		     					   </div> 	                      	
+	                     </div>                    
+	                  </a>
+	               </div>
+	        		</div> <!-- /folio-item -->
+
+	            <!-- modal popups - begin
+	            ============================================================= -->
+	            <div id="modal-01" class="popup-modal slider mfp-hide">	
+
+				     	<div class="media">
+				     		<img src="images/portfolio/modals/m-liberty.jpg" alt="" />
+				     	</div>      	
+
+					   <div class="description-box">
+					      <h4>Liberty</h4>		      
+					      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+
+					      <div class="categories">Web Development</div>			               
+					   </div>
+
+			         <div class="link-box">
+			            <a href="http://www.behance.net">Details</a>
+					      <a href="#" class="popup-modal-dismiss">Close</a>
+			         </div>		      
+
+				   </div> <!-- /modal-01 -->
+				 <!--
+                        <div id="modal-02" class="popup-modal slider mfp-hide">
+
+                              <div class="media">
+                                  <img src="images/portfolio/modals/m-shutterbug.jpg" alt="" />
+                              </div>
                             <!--
-                            <button class="btn post-btn">Read More &nbsp; <i class="fas fa-arrow-right"></i></button>
-                            ---->
-                        </div>
-                    </div>
-                    <hr>
-                    <!---
-                   <div class="post-content" data-aos="zoom-in" data-aos-delay="200">
-                       <div class="post-image">
-                           <div>
-                               <img src="./assets/raupi.jpg" class="img" alt="blog1">
-                           </div>
-                           <div class="post-info flex-row">
-                               <span><i class="fas fa-user text-gray"></i>&nbsp;&nbsp;Admin</span>
-                               <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;January 16, 2019</span>
-                               <span>7 Commets</span>
-                           </div>
-                       </div>
+                                                   <div class="description-box">
+                                                      <h4>Shutterbug</h4>
+                                                      <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
 
-                       <div class="post-title">
-                           <a href="#">Why should boys have all the fun? it's the women who are making india an
-                               alcohol-loving contry</a>
-                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque voluptas deserunt beatae
-                               adipisci iusto totam placeat corrupti ipsum, tempora magnam incidunt aperiam tenetur a
-                               nobis, voluptate, numquam architecto fugit. Eligendi quidem ipsam ducimus minus magni
-                               illum similique veniam tempore unde?
-                           </p>
-                           <button class="btn post-btn">Read More &nbsp; <i class="fas fa-arrow-right"></i></button>
-                       </div>
+                                                      <div class="categories">Web Design</div>
+                                                   </div>
 
-                   </div>
-                   <hr>
-                   <div class="post-content" data-aos="zoom-in" data-aos-delay="200">
-                       <div class="post-image">
-                           <div>
-                               <img src="./assets/Blog-post/blog3.png" class="img" alt="blog1">
-                           </div>
-                           <div class="post-info flex-row">
-                               <span><i class="fas fa-user text-gray"></i>&nbsp;&nbsp;Admin</span>
-                               <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;January 19, 2019</span>
-                               <span>5 Commets</span>
-                           </div>
-                       </div>
-                       <div class="post-title">
-                           <a href="#">New data recording system to better analyse road accidents</a>
-                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque voluptas deserunt beatae
-                               adipisci iusto totam placeat corrupti ipsum, tempora magnam incidunt aperiam tenetur a
-                               nobis, voluptate, numquam architecto fugit. Eligendi quidem ipsam ducimus minus magni
-                               illum similique veniam tempore unde?
-                           </p>
-                           <button class="btn post-btn">Read More &nbsp; <i class="fas fa-arrow-right"></i></button>
-                       </div>
-                   </div>
-                   <hr>
-                   <div class="post-content" data-aos="zoom-in" data-aos-delay="200">
-                       <div class="post-image">
-                           <div>
-                               <img src="./assets/Blog-post/blog4.png" class="img" alt="blog1">
-                           </div>
-                           <div class="post-info flex-row">
-                               <span><i class="fas fa-user text-gray"></i>&nbsp;&nbsp;Admin</span>
-                               <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;January 21, 2019</span>
-                               <span>12 Commets</span>
-                           </div>
-                       </div>
-                       <div class="post-title">
-                           <a href="#">New data recording system to better analyse road accidents</a>
-                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque voluptas deserunt beatae
-                               adipisci iusto totam placeat corrupti ipsum, tempora magnam incidunt aperiam tenetur a
-                               nobis, voluptate, numquam architecto fugit. Eligendi quidem ipsam ducimus minus magni
-                               illum similique veniam tempore unde?
-                           </p>
-                           <button class="btn post-btn">Read More &nbsp; <i class="fas fa-arrow-right"></i></button>
-                       </div>
-                   </div>
+                                                 <div class="link-box">
+                                                    <a href="http://www.behance.net">Details</a>
+                                                      <a href="#" class="popup-modal-dismiss">Close</a>
+                                                 </div>
 
+                                               </div> <!-- /modal-02 -->
+				 <!--
+                                    <div id="modal-03" class="popup-modal slider mfp-hide">
 
-                   <div class="pagination flex-row">
-                       <a href="#"><i class="fas fa-chevron-left"></i></a>
-                       <a href="#" class="pages">1</a>
-                       <a href="#" class="pages">2</a>
-                       <a href="#" class="pages">3</a>
-                       <a href="#"><i class="fas fa-chevron-right"></i></a>
-                   </div>
-               </div>
-               <aside class="sidebar">
-                   <div class="category">
-                       <h2>Category</h2>
-                       <ul class="category-list">
-                           <li class="list-items" data-aos="fade-left" data-aos-delay="100">
-                               <a href="#">Happy Stuff</a>
-                               <span>(00)</span>
-                           </li>
-                           <li class="list-items" data-aos="fade-left" data-aos-delay="200">
-                               <a href="#">Real Stuff</a>
-                               <span>(00)</span>
-                           </li>
-                           <li class="list-items" data-aos="fade-left" data-aos-delay="300">
-                               <a href="#">Sad Stuff</a>
-                               <span>(00)</span>
-                           </li>
-                       </ul>
-                   </div>
-                    --->
-                    <!---
-                    <div class="popular-post">
-                        <h2>Popular Post</h2>
-                        <div class="post-content" data-aos="flip-up" data-aos-delay="200">
-                            <div class="post-image">
-                                <div>
-                                    <img src="./assets/popular-post/m-blog-1.jpg" class="img" alt="blog1">
-                                </div>
-                                <div class="post-info flex-row">
-                                    <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;January 14,
-                                        2019</span>
-                                    <span>2 Commets</span>
-                                </div>
-                            </div>
-                            <div class="post-title">
-                                <a href="#">New data recording system to better analyse road accidents</a>
-                            </div>
-                        </div>
-                        <div class="post-content" data-aos="flip-up" data-aos-delay="300">
-                            <div class="post-image">
-                                <div>
-                                    <img src="./assets/popular-post/m-blog-2.jpg" class="img" alt="blog1">
-                                </div>
-                                <div class="post-info flex-row">
-                                    <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;January 14,
-                                        2019</span>
-                                    <span>2 Commets</span>
-                                </div>
-                            </div>
-                            <div class="post-title">
-                                <a href="#">New data recording system to better analyse road accidents</a>
-                            </div>
-                        </div>
-                        <div class="post-content" data-aos="flip-up" data-aos-delay="400">
-                            <div class="post-image">
-                                <div>
-                                    <img src="./assets/popular-post/m-blog-3.jpg" class="img" alt="blog1">
-                                </div>
-                                <div class="post-info flex-row">
-                                    <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;January 14,
-                                        2019</span>
-                                    <span>2 Commets</span>
-                                </div>
-                            </div>
-                            <div class="post-title">
-                                <a href="#">New data recording system to better analyse road accidents</a>
-                            </div>
-                        </div>
-                        <div class="post-content" data-aos="flip-up" data-aos-delay="500">
-                            <div class="post-image">
-                                <div>
-                                    <img src="./assets/popular-post/m-blog-4.jpg" class="img" alt="blog1">
-                                </div>
-                                <div class="post-info flex-row">
-                                    <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;January 14,
-                                        2019</span>
-                                    <span>2 Commets</span>
-                                </div>
-                            </div>
-                            <div class="post-title">
-                                <a href="#">New data recording system to better analyse road accidents</a>
-                            </div>
-                        </div>
-                        <div class="post-content" data-aos="flip-up" data-aos-delay="600">
-                            <div class="post-image">
-                                <div>
-                                    <img src="./assets/popular-post/m-blog-5.jpg" class="img" alt="blog1">
-                                </div>
-                                <div class="post-info flex-row">
-                                    <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;January 14,
-                                        2019</span>
-                                    <span>2 Commets</span>
-                                </div>
-                            </div>
-                            <div class="post-title">
-                                <a href="#">New data recording system to better analyse road accidents</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="newsletter" data-aos="fade-up" data-aos-delay="300">
-                        <h2>Newsletter</h2>
-                        <div class="form-element">
-                            <input type="text" class="input-element" placeholder="Email">
-                            <button class="btn form-btn">Subscribe</button>
-                        </div>
-                    </div>
-                    <div class="popular-tags">
-                        <h2>Popular Tags</h2>
-                        <div class="tags flex-row">
-                            <span class="tag" data-aos="flip-up" data-aos-delay="100">Software</span>
-                            <span class="tag" data-aos="flip-up" data-aos-delay="200">technology</span>
-                            <span class="tag" data-aos="flip-up" data-aos-delay="300">travel</span>
-                            <span class="tag" data-aos="flip-up" data-aos-delay="400">illustration</span>
-                            <span class="tag" data-aos="flip-up" data-aos-delay="500">design</span>
-                            <span class="tag" data-aos="flip-up" data-aos-delay="600">lifestyle</span>
-                            <span class="tag" data-aos="flip-up" data-aos-delay="700">love</span>
-                            <span class="tag" data-aos="flip-up" data-aos-delay="800">project</span>
-                        </div>
-                    </div>
-                --->
-                </aside>
-            </div>
-        </section>
+                                          <div class="media">
+                                              <img src="images/portfolio/modals/m-clouds.jpg" alt="" />
+                                          </div>
 
-        <!-- -----------x---------- Site Content -------------x------------>
+                                        <div class="description-box">
+                                           <h4>Clouds</h4>
+                                           <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
 
-    </main>
+                                           <div class="categories">Web Design</div>
+                                        </div>
+                                        <!--
+                                                             <div class="link-box">
+                                                                <a href="http://www.behance.net">Details</a>
+                                                                  <a href="#" class="popup-modal-dismiss">Close</a>
+                                                             </div>
 
-    <!---------------x------------- Main Site Section ---------------x-------------->
+                                                           </div> <!-- /modal-03 -->
+				 <!--
+                                    <div id="modal-04" class="popup-modal slider mfp-hide">
+
+                                          <div class="media">
+                                              <img src="images/portfolio/modals/m-beetle.jpg" alt="" />
+                                          </div>
+
+                                        <div class="description-box">
+                                           <h4>Beetle</h4>
+                                           <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+
+                                           <div class="categories">Branding</div>
+                                        </div>
+
+                                      <div class="link-box">
+                                         <a href="http://www.behance.net">Details</a>
+                                           <a href="#" class="popup-modal-dismiss">Close</a>
+                                      </div>
+
+                                    </div> <!-- /modal-04 -->
+				 <!--
+                                    <div id="modal-05" class="popup-modal slider mfp-hide">
+
+                                          <div class="media">
+                                              <img src="images/portfolio/modals/m-lighthouse.jpg" alt="" />
+                                          </div>
+
+                                        <div class="description-box">
+                                           <h4>Lighthouse</h4>
+                                           <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+
+                                           <div class="categories">Web Development</div>
+                                        </div>
+
+                                      <div class="link-box">
+                                         <a href="http://www.behance.net">Details</a>
+                                           <a href="#" class="popup-modal-dismiss">Close</a>
+                                      </div>
+
+                                    </div> <!-- /modal-05 -->
+				 <!--
+                                    <div id="modal-06" class="popup-modal slider mfp-hide">
+
+                                          <div class="media">
+                                              <img src="images/portfolio/modals/m-salad.jpg" alt="" />
+                                          </div>
+
+                                        <div class="description-box">
+                                           <h4>Salad</h4>
+                                           <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+
+                                           <div class="categories">Branding</div>
+                                        </div>
+
+                                      <div class="link-box">
+                                         <a href="http://www.behance.net">Details</a>
+                                           <a href="#" class="popup-modal-dismiss">Close</a>
+                                      </div>
+
+                                    </div> <!-- /modal-06 -->
 
 
-    <!-- --------------------------- Footer ---------------------------------------- -->
+				   <!-- modal popups - end
+	            ============================================================= -->
 
-    <footer class="footer">
-        <div class="container">
-            <div class="about-us" data-aos="fade-right" data-aos-delay="200">
-                <h2>About us</h2>
-                <img style="border-radius: 50%" width="80 em" src="./assets/Anna.jpg" alt="insta4">
-                <p>Anna Altman
-                <br> <br>
-                    Studentin, Technische Hochschule Nürnberg
-                    <br><br>
-                </p>
-            </div>
-            <div class="newsletter" data-aos="fade-right" data-aos-delay="200">
-                <h2>Newsletter</h2>
-                <p>Stay update with our latest</p>
-                <div class="form-element">
-                    <input type="text" placeholder="Email"><span><i class="fas fa-chevron-right"></i></span>
-                </div>
-            </div>
-            <!---
-            <div class="instagram" data-aos="fade-left" data-aos-delay="200">
-                <h2>Instagram</h2>
-                <div class="flex-row">
-                    <img src="./assets/instagram/thumb-card3.png" alt="insta1">
-                    <img src="./assets/instagram/thumb-card4.png" alt="insta2">
-                    <img src="./assets/instagram/thumb-card5.png" alt="insta3">
-                </div>
-                <div class="flex-row">
-                    <img src="./assets/instagram/thumb-card6.png" alt="insta4">
-                    <img src="./assets/instagram/thumb-card7.png" alt="insta5">
-                    <img src="./assets/instagram/thumb-card8.png" alt="insta6">
-                </div>
-            </div>
-            <div class="follow" data-aos="fade-left" data-aos-delay="200">
-                <h2>Follow us</h2>
-                <p>Let us be Social</p>
-                <div>
-                    <i class="fab fa-facebook-f"></i>
-                    <i class="fab fa-twitter"></i>
-                    <i class="fab fa-instagram"></i>
-                    <i class="fab fa-youtube"></i>
-                </div>
-            </div>
-        </div>
-         --->
-        <div class="rights flex-row">
-            <h4 class="text-gray">
-                <!-- Text --->
-            </h4>
-        </div>
-        <div class="move-up">
-            <span><i class="fas fa-arrow-circle-up fa-2x"></i></span>
-        </div>
-    </footer>
+	         </div> <!-- /portfolio-wrapper --> 
 
-    <!-- -------------x------------- Footer --------------------x------------------- -->
+   		</div>  <!-- /twelve -->   
 
-    <!-- Jquery Library file -->
-    <script src="./js/Jquery3.4.1.min.js"></script>
+   	</div> <!-- /portfolio-content --> 
+		
+	</section> <!-- /portfolio --> 
 
-    <!-- --------- Owl-Carousel js ------------------->
-    <script src="./js/owl.carousel.min.js"></script>
 
-    <!-- ------------ AOS js Library  ------------------------- -->
-    <script src="./js/aos.js"></script>
+	<!-- CTA Section
+   ================================================== -->
+	<section id="cta" class="grey-section">
 
-    <!-- Custom Javascript file -->
-    <script src="./js/main.js"></script>
+   	<div class="row cta-content">
+
+   		<div class="col-twelve section-ads">  
+
+	     		<h2 class="h01"><a href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT">Styleshout Recommends Dreamhost.</a></h2>
+
+		      <p class="lead">
+		      Looking for an awesome and reliable webhosting? Try <a href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT"><span>DreamHost</span></a>.
+				Get <span>$50 off</span> when you sign up with the promocode <span>styleshout</span>. 
+				<!-- Simply type	the promocode in the box labeled “Promo Code” when placing your order. -->	
+				</p>
+
+				<div class="action">
+			      <a class="button button-primary large" href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT">Sign Up Now</a>
+		      </div>		     	
+
+   		</div>
+
+   	</div> <!-- /cta-content -->
+
+   </section> <!-- /cta --> 
+
+	
+	<!-- services Section
+   ================================================== -->
+	<section id="services">
+
+		<div class="overlay"></div>
+
+		<div class="row section-intro">
+   		<div class="col-twelve">
+
+   			<h5>Services</h5>
+   			<h1>What Can I Do For You?</h1>
+
+   			<p class="lead">In need of a Webdeveloper?</p>
+
+   		</div>   		
+   	</div> <!-- /section-intro -->
+
+   	<div class="row services-content">
+
+   		<div id="owl-slider" class="owl-carousel services-list">
+
+	      	<div class="service">	
+
+	      		<span class="icon"><i class="icon-earth"></i></span>            
+
+	            <div class="service-content">	
+
+	            	 <h3>Webdesign</h3>
+
+		            <p class="desc">Do you need a front-End Webreprentation?</p>
+	         		
+	         	</div> 	         	 
+
+				</div> <!-- /service -->
+
+				<div class="service">	
+
+					<span class="icon"><i class="icon-window"></i></span>                          
+
+	            <div class="service-content">	
+
+	            	<h3>Web Development</h3>  
+
+		            <p class="desc">Do you need help with Data-Analysis or back-End developement? </p>
+
+	            </div>	                          
+
+			   </div> <!-- /service -->
+
+			   <div class="service">
+
+			   	<span class="icon"><i class="icon-contrast"></i></span>
+
+	            <div class="service-content">
+
+	            	<h3>Connection</h3>
+
+		            <p class="desc">Do you need help with interfaces or systembla?</p>
+
+	            </div> 	            	               
+
+			   </div>
+
+				<div class="service">
+
+					<span class="icon"><i class="icon-toggles"></i></span>	              
+
+	            <div class="service-content">
+
+	            	<h3>C# or C++</h3>
+
+		            <p class="desc">During my studies on the Technical University of Nürnberg I did learn the basics for C#-Programming and C++. </p>
+	         		
+	            </div>                
+
+				</div> <!-- /service -->
+<!--
+			   <div class="service">
+
+			   	<span class="icon"><i class="icon-image"></i></span>	            
+
+	            <div class="service-content">
+
+	            	<h3>Graphics Design</h3>
+
+		            <p class="desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+	        			</p> 
+
+	            </div>
+
+			   </div> <!-- /service -->
+<!--
+			   <div class="service">
+
+			   	<span class="icon"><i class="icon-chat"></i></span>	   	           
+
+	            <div class="service-content">
+
+	            	 <h3>Consultancy</h3>
+
+		            <p class="desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+	        			</p> 
+	        			
+	            </div>	               
+
+			   </div> <!-- /service -->
+	      </div> <!-- /services-list -->
+   		
+   	</div> <!-- /services-content -->
+		
+	</section> <!-- /services -->	
+
+
+	<!-- stats Section
+   ================================================== -->
+	<section id="stats" class="count-up">
+
+		<div class="row">
+			<div class="col-twelve">
+				<h2>Random facts of the day:</h2>
+				<br>
+				<div class="block-1-6 block-s-1-3 block-tab-1-2 block-mob-full stats-list">
+
+					<div class="bgrid stat">
+
+						<div class="icon-part">
+							<i class="icon-earth"></i>
+						</div>
+
+						<h3 class="stat-count">
+							53
+						</h3>
+
+						<h5 class="stat-title">
+							How many moons does Jupiter have?
+						</h5>
+
+					</div> <!-- /stat -->					
+
+					<div class="bgrid stat">
+
+						<div class="icon-part">
+							<i class="icon-group"></i>
+						</div>
+
+						<h3 class="stat-count">
+							8700000
+						</h3>
+
+						<h5 class="stat-title">
+							How many species are on the planet earth currently?
+						</h5>
+
+					</div> <!-- /stat -->
+
+					<div class="bgrid stat">
+
+						<div class="icon-part">
+							<i class="icon-user"></i>
+						</div>
+
+						<h3 class="stat-count">
+							574
+						</h3>
+
+						<h5 class="stat-title">
+							How many people have gone to space until now?
+						</h5>
+
+					</div> <!-- /stat -->									
+
+
+				</div> <!-- /stats-list -->
+
+			</div> <!-- /twelve -->
+		</div> <!-- /row -->
+
+	</section> <!-- /stats -->
+
+	
+   <!-- contact
+   ================================================== -->
+	<section id="contact">
+
+		<div class="row section-intro">
+   		<div class="col-twelve">
+
+   			<h5>Contact</h5>
+   			<h1>I'd Love To Hear From You.</h1>
+
+   			<p class="lead"></p>
+
+   		</div> 
+   	</div> <!-- /section-intro -->
+
+   	<div class="row contact-form">
+
+   		<div class="col-twelve">
+
+            <!-- form -->
+            <form name="contactForm" id="contactForm" method="post" action="">
+      			<fieldset>
+
+                  <div class="form-field">
+ 						   <input name="contactName" type="text" id="contactName" placeholder="Name" value="" minlength="2" required="">
+                  </div>
+                  <div class="form-field">
+	      			   <input name="contactEmail" type="email" id="contactEmail" placeholder="Email" value="" required="">
+	               </div>
+                  <div class="form-field">
+	     				   <input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value="">
+	               </div>                       
+                  <div class="form-field">
+	                 	<textarea name="contactMessage" id="contactMessage" placeholder="message" rows="10" cols="50" required=""></textarea>
+	               </div>                      
+                 <div class="form-field">
+                     <button class="submitform">Submit</button>
+                     <div id="submit-loader">
+                        <div class="text-loader">Sending...</div>                             
+       				      <div class="s-loader">
+								  	<div class="bounce1"></div>
+								  	<div class="bounce2"></div>
+								  	<div class="bounce3"></div>
+								</div>
+							</div>
+                  </div>
+
+      			</fieldset>
+      		</form> <!-- Form End -->
+
+            <!-- contact-warning -->
+            <div id="message-warning">            	
+            </div>            
+            <!-- contact-success -->
+      		<div id="message-success">
+               <i class="fa fa-check"></i>Your message was sent, thank you!<br>
+      		</div>
+
+         </div> <!-- /col-twelve -->
+   		
+   	</div> <!-- /contact-form -->
+
+		
+	</section> <!-- /contact -->
+
+
+   <!-- footer
+   ================================================== -->
+
+   <footer>
+     	<div class="row">
+
+     		<div class="col-six tab-full pull-right social">
+
+     			<ul class="footer-social">        
+			      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+			      <li><a href="#"><i class="fa fa-behance"></i></a></li>
+			      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+			      <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+			      <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+			   </ul> 
+	      		
+	      </div>
+
+
+	      	<div id="go-top">
+		         <a class="smoothscroll" title="Back to Top" href="#top"><i class="fa fa-long-arrow-up"></i></a>
+		      </div>
+
+      	</div> <!-- /row -->     	
+   </footer>  
+
+   <div id="preloader"> 
+    	<div id="loader"></div>
+   </div>
+
+   <!-- Java Script
+   ================================================== --> 
+   <script src="js/jquery-2.1.3.min.js"></script>
+   <script src="js/plugins.js"></script>
+   <script src="js/main.js"></script>
+
+</body>
+
+</html>
